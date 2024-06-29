@@ -112,6 +112,7 @@ body section {
   font-size: 18px;
   font-weight: 400;
   border-radius: 20px;
+  border: none;
   color:white;
   background-color: #00ff8067;
   animation: slideInLeft 1.5s ease-in-out;
@@ -189,6 +190,19 @@ body section {
   width: 0;
   transition: width 2s ease-in-out;
   border-radius: 100px;
+}
+
+.skill:hover .progress-bar::after {
+  content: attr(data-progress);
+  position: relative;
+  top: 0;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 4px;
+  padding-right: 45px;
+  border-radius: 4px;
 }
 
 .contact form {
