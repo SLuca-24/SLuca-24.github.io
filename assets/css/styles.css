@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body section {
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #1a1a1a;
+}
+
+.navbar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar > a {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+#navstyle {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#navstyle:hover {
+  text-decoration: underline;
+  text-shadow: 0 2px 4px #585858;
+}
+
+.intro {
+  text-align: center;
+  padding: 100px 0;
+  background-image: url('../img/btcindex.jpeg');
+  background-size: cover;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.intro .description {
+  margin: 20px 0;
+  font-size: 27px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  animation: slideInUp 1.5s ease-in-out;
+}
+
+.about,
+.projects,
+.skills,
+.contact {
+  background-color: #1a1a1a;
+  padding: 50px 0;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about h2,
+.projects h2,
+.skills h2,
+.contact h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  animation: slideInDown 1.5s ease-in-out;
+}
+
+.projects h2 {
+  margin-bottom: 30px;
+}
+
+.about p,
+.projects p,
+.skills p,
+.contact p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 22px;
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+.about p{
+  font-size:25px;
+}
+
+#buttonaboutme {
+  margin-top:20px;
+  padding:10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Arial';
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 20px;
+  color:white;
+  background-color: #00ff8067;
+  animation: slideInLeft 1.5s ease-in-out;
+}
+
+#buttonaboutme:hover {
+  background-color: #00cc66;
+  transform: scale(1.05);
+}
+
+.project-card {
+  background-color: #00ff80a9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: #00ff8067;
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#project-link {
+  text-decoration: none;
+  color: white;
+}
+
+#project-link:hover {
+  text-shadow: 0 3px 6px rgb(71, 71, 71);
+}
+
+.skills {
+  background-color: #1a1a1a;
+  padding: 50px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.skills h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.skill {
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.skill p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  background-color: #333;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 60px;
+  position: relative;
+  animation: progressAnimation 2s ease-in-out forwards;
+}
+
+.progress-bar {
+  background-color: #00ff80a9;
+  height: 100%;
+  width: 0;
+  transition: width 2s ease-in-out;
+  border-radius: 100px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: slideInRight 1.5s ease-in-out;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact-btn {
+  background-color: #00ff80a9;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #00cc66;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 767px) {
+  .intro .description {
+    margin: 20px 0;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background-color: rgba(85, 78, 78, 0.6);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
