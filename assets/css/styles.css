@@ -49,7 +49,6 @@ body section {
   text-align: center;
   padding: 100px 0;
   background-image: url('../img/btcindex.jpeg');
-  background-size: cover;
   animation: fadeIn 1.5s ease-in-out;
 }
 
