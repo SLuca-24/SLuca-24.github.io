@@ -83,4 +83,17 @@ display: flex;
 justify-content: center;
 }
 
+@media (max-width: 630px) {
+
+    .work1, .work2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .works-container {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
 
