@@ -392,6 +392,15 @@ div.menu li li a {
     margin-bottom: 15px;
   }
 
+  .intro {
+    padding: 30px 20px; /* Add some padding to the .intro section */
+  }
+
+  .intro h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
   .intro .description {
     margin-top: 20px;
     font-size: 18px;
