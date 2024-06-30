@@ -70,6 +70,12 @@ div.menu li:hover {
 
 #w {
   color: black;
+  padding-top: 40px;
+  padding-bottom:40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 #w:hover {

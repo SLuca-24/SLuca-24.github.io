@@ -85,17 +85,18 @@ body {
   
   .introduction p {
     font-size: 30px;
-    color: #00ff80a9 ;
+    color: white;
     letter-spacing: 2px;
   }
   
   .introduction h1 {
     font-size: 40px;
     line-height: 1.2;
+    color: #00ff80a9;
   }
   
   .introduction h1 .highlight {
-    color: #00ff80a9;
+    color: white;
   }
   
   .introduction h1, .introduction p {
@@ -106,6 +107,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 40px;
+
   }
   
   .stats > div {
@@ -115,6 +117,10 @@ body {
   .stats h2 {
     font-size: 40px;
     color: #00ff80a9;
+  }
+
+  .singlestats:hover {
+    transform: scale(1.1);
   }
   
   .stats p {
