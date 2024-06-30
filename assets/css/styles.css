@@ -17,8 +17,8 @@ body section {
 .header {
   background-color: #1a1a1a;
   padding: 10px;
-  padding-top:40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .headerin {
@@ -26,20 +26,20 @@ body section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-/*hamburger menu*/
+/* Hamburger Menu */
 div.menu {
   color: #ffffff;
   max-width: 50px;
   max-height: 50px;
 }
 
+/* Hamburger Menu Bars */
 .first .bar {
   width: 50%;
   height: 4px;
-  background-color: rgb(255, 255, 255);    
+  background-color: rgb(255, 255, 255);
 }
 
 div.menu ul {
@@ -100,7 +100,7 @@ div.menu li li a {
   padding: 2px 2px 2px 10px;
 }
 
-/*logo*/
+/* Logo */
 .logo-div {
   display: flex;
   min-width: 60px;
@@ -115,7 +115,7 @@ div.menu li li a {
   border-radius: 50px;
 }
 
-/*title*/
+/* Title */
 .title-text {
   display: flex;
   font-size: 40px;
@@ -123,6 +123,7 @@ div.menu li li a {
   font-weight: 700;
 }
 
+/* Intro Section */
 .intro {
   text-align: center;
   padding-top: 50px;
@@ -146,6 +147,7 @@ div.menu li li a {
   animation: slideInUp 1.5s ease-in-out;
 }
 
+/* About, Projects, Skills, Contact Sections */
 .about,
 .projects,
 .skills,
@@ -232,6 +234,7 @@ div.menu li li a {
   text-shadow: 0 3px 6px rgb(71, 71, 71);
 }
 
+/* Skills Section */
 .skills {
   background-color: #1a1a1a;
   padding: 50px 0;
@@ -274,7 +277,7 @@ div.menu li li a {
 
 .skill:hover .progress-bar::after {
   content: attr(data-progress);
-  position: relative;
+  position: relative; 
   top: 0;
   left: 50%;
   color: rgb(255, 255, 255);
@@ -285,6 +288,7 @@ div.menu li li a {
   border-radius: 4px;
 }
 
+/* Contact Section */
 .contact form {
   display: flex;
   flex-direction: column;
@@ -320,6 +324,7 @@ div.menu li li a {
   background-color: #00cc66;
 }
 
+/* Footer */
 .footer {
   background-color: #1a1a1a;
   text-align: center;
@@ -330,6 +335,7 @@ div.menu li li a {
   margin: 5px 0;
 }
 
+/* Media Queries */
 @media (max-width: 767px) {
 
   .intro .description {
@@ -353,19 +359,16 @@ div.menu li li a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-     
   }
 
-  
-  /*hamburger menu*/
+  /* Hamburger Menu */
   div.menu {
     color: #ffffff;
     max-width: 50px;
     max-height: 50px;
-   
   }
-  /*logo*/
-  
+
+  /* Logo */
   .logo-div {
     display: flex;
     min-width: 60px;
@@ -373,23 +376,15 @@ div.menu li li a {
     max-width: 60px;
     max-height: 60px;
   }
-  /*title*/
+
+  /* Title */
   .title-text {
     display: flex;
     font-size: 40px;
-    color:#ffffff;
+    color: #ffffff;
     font-weight: 700;
     padding: 20px;
     padding-left: 60px;
-
-
-  .intro {
-    padding: 30px 20px; /* Add some padding to the .intro section */
-  }
-
-  .intro h1 {
-    font-size: 30px;
-    margin-bottom: 15px;
   }
 
   .intro {
@@ -422,7 +417,7 @@ div.menu li li a {
   }
 }
 
-
+/* Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -483,5 +478,4 @@ div.menu li li a {
   100% {
     width: 100%;
   }
-}
 }
