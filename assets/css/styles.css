@@ -9,6 +9,16 @@ body section {
   margin-bottom: 60px;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #1a1a1a;
+  padding: 40px;
+}
+
 
 .headerin {
   display:flex;
@@ -18,11 +28,12 @@ body section {
 }
 
 
-
+/*hamburger menu*/
 div.menu {
   color: #ffffff;
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 50px;
+  max-height: 50px;
+  border:solid;
   }
 
   .first .bar {
@@ -92,25 +103,13 @@ div.menu li li { border:none; width:150px; }
 div.menu li li a { padding:2px 2px 2px 10px; }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*logo*/
 
 .logo-div {
   display: flex;
   max-width: 60px;
   max-height: 60px;
+  border:solid;
 }
 
 .logo-div img {
@@ -119,33 +118,20 @@ height: 100%;
 border-radius: 50px;
 }
 
+
+/*title*/
 .title-text {
   display: flex;
-  font-size: 50px;
+  font-size: 40px;
   color:#ffffff;
   font-weight: 700;
+  border:solid;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.header {
-  background-color: #1a1a1a;
-  padding: 40px;
-}
 
 
 
@@ -365,6 +351,14 @@ border-radius: 50px;
 }
 
 @media (max-width: 767px) {
+
+  .headerin {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .intro .description {
     margin-top: 20px;
     font-size: 18px;
