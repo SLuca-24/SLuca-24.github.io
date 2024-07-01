@@ -18,7 +18,6 @@ body {
     display: flex;
     gap: 50px; 
     justify-content: center; 
-    padding: 50px;
     
 }
 
@@ -85,15 +84,12 @@ justify-content: center;
 
 @media (max-width: 630px) {
 
-    .work1, .work2 {
-        display: flex;
-        flex-direction: column;
-    }
-
     .works-container {
         display: flex;
         flex-direction: column;
-    }
+        margin-left: 35px;
+        margin-top: 20px;
+        }
   }
 
 

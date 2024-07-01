@@ -129,7 +129,7 @@ div.menu li li a {
   font-weight: 700;
 }
 
-/* Intro Section */
+/* Intro*/
 .intro {
   text-align: center;
   padding-top: 50px;
@@ -421,6 +421,7 @@ div.menu li li a {
     display: block;
     height: 10px; /* Space after description */
   }
+
 }
 
 /* Animations */
