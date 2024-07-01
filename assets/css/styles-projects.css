@@ -18,18 +18,22 @@ body {
     display: flex;
     gap: 50px; 
     justify-content: center; 
+    padding: 50px;
     
 }
 
 .work1, .work2 {
-    border-radius: 20px;
+    border: solid;
+    border-color: #1a1a1a;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
     width: 500px;
     padding: 10px;
     background-color: #1a1a1a;
-    color: rgb(255, 255, 255);
+    color:white;
+    
 }
 
 img {
@@ -82,14 +86,17 @@ display: flex;
 justify-content: center;
 }
 
-@media (max-width: 630px) {
 
+@media (max-width:848px) {
+    
     .works-container {
-        display: flex;
         flex-direction: column;
-        margin-left: 35px;
-        margin-top: 20px;
-        }
-  }
+        align-items: center;
+    }
+    
+}
+
+
+
 
 
