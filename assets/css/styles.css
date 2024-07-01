@@ -35,7 +35,6 @@ div.menu {
   max-height: 50px;
 }
 
-/* Hamburger Menu Bars */
 .first .bar {
   width: 50%;
   height: 4px;
@@ -153,7 +152,7 @@ div.menu li li a {
   animation: slideInUp 1.5s ease-in-out;
 }
 
-/* About, Projects, Skills, Contact Sections */
+/*Sections */
 .about,
 .projects,
 .skills,
@@ -173,9 +172,7 @@ div.menu li li a {
   animation: slideInDown 1.5s ease-in-out;
 }
 
-.projects h2 {
-  margin-bottom: 30px;
-}
+
 
 .about p,
 .projects p,
@@ -186,6 +183,8 @@ div.menu li li a {
   font-size: 22px;
   animation: slideInLeft 1.5s ease-in-out;
 }
+
+/*about section*/
 
 .about p {
   font-size: 25px;
@@ -211,6 +210,7 @@ div.menu li li a {
   transform: scale(1.05);
 }
 
+/* project section */
 .project-card {
   background-color: #00ff80a9;
   padding: 20px;
@@ -238,6 +238,10 @@ div.menu li li a {
 
 #project-link:hover {
   text-shadow: 0 3px 6px rgb(71, 71, 71);
+}
+
+.projects h2 {
+  margin-bottom: 30px;
 }
 
 /* Skills Section */
@@ -341,7 +345,7 @@ div.menu li li a {
   margin: 5px 0;
 }
 
-/* Media Queries */
+/* Media*/
 @media (max-width: 767px) {
 
   .intro .description {
@@ -394,7 +398,7 @@ div.menu li li a {
   }
 
   .intro {
-    padding: 30px 20px; /* Add some padding to the .intro section */
+    padding: 30px 20px; 
   }
 
   .intro h1 {
@@ -405,21 +409,21 @@ div.menu li li a {
   .intro .description {
     margin-top: 20px;
     font-size: 18px;
-    max-width: 100%; /* Ensure it takes full width */
+    max-width: 100%; 
     margin: 0 auto 20px;
-    padding: 15px; /* Add some padding for better spacing */
+    padding: 15px; 
   }
 
   .intro .description::before {
     content: "";
     display: block;
-    height: 10px; /* Space before description */
+    height: 10px; 
   }
 
   .intro .description::after {
     content: "";
     display: block;
-    height: 10px; /* Space after description */
+    height: 10px; 
   }
 
 }
