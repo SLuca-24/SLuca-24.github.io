@@ -1,22 +1,33 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0D0D0D;
+    font-family: Arial;
+    background-color: #1A1A1A;
     color: #ffffff;
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  
   }
   
   .container {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: #1A1A1A;
+    min-width: 0;
+
+    
   }
   
+
+.page {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
   .sidebar {
     width: 30%;
     background-color: #000;
@@ -24,7 +35,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin-top:20px;
+    margin-left: 10px;
+    margin-right: 30px;
     border:solid 3px #4d4b4b;
     border-radius: 20px;
   }
@@ -75,12 +88,17 @@ body {
   }
   
   .main-content {
-    width: 70%;
+    flex: 1;
+    width: 100%;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    border:solid 3px #4d4b4b;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-right: 10px;
   }
   
   .introduction p {
@@ -127,30 +145,441 @@ body {
     font-size: 20px;
   }
   
+
+
+  .header {
+    margin: 10px;
+    background-color: #1a1a1a;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border:solid 3px #4d4b4b;
+    border-radius: 20px;
+  }
   
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
+  .headerin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   
-    .sidebar {
-      width: 100%;
-      height: auto;
-      padding: 20px 0;
-    }
+  .nav-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
   
-    .main-content {
-      width: 100%;
-      padding: 20px;
-    }
+  .leftside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   
-    .stats {
-      flex-direction: column;
-      align-items: center;
-    }
+  .hire-me {
+    background-color: #00ff80a9;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 22px;
+    min-width: 101px;
+  }
   
-    .stats > div {
-      margin-bottom: 20px;
+  .navbar {
+    display: flex;
+    padding-left: 15px;
+  }
+  
+  .navbar a {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    font-size: auto;
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  .logomail {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .logo-div {
+    display: flex;
+    max-height: 80px;
+    max-width: 80px;
+    
+  }
+  
+  .logo-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+  }
+  
+  /* mail */
+  .mail-text {
+    display: flex;
+    color: #ffffff;
+    height: 100%;
+    align-items:center;
+    padding-right: 20px;
+    font-size:22px;
+  }
+  
+  
+  
+  
+  
+  /* Media*/
+
+  /*big layout*/
+  @media(min-width: 992px) {
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .iphone-contactbtn {
+    display: none;
+  }
+  
+  .ipad-contactbtn {
+    display: none;
+  }
+
+  .hire-me {
+    background-color: #00ff80a9;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 22px;
+    width:124px;
+  }
+    
+    .navbar a {
+      display: flex;
+      flex-direction: row;
+      padding: 15px;
+      font-size: auto;
+      color:white;
+      text-decoration: none;
+      font-size: 22px;
     }
   }
   
+  
+  
+  
+  
+  /*ipad layout*/
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  .header {
+    width: 85%;
+  }
+ .page {
+  flex-direction: column;
+ }
+ 
+ .sidebar {
+  width: 90%;
+ }
+
+ .main-content {
+  width: 87%;
+ }
+  
+  .pc-contactbtn {
+    display: none;
+  }
+  
+  .iphone-contactbtn {
+    display:none;
+  }
+  
+  /* Hamburger Menu */
+  .navbar {
+    display: none;
+  }
+  
+  div.hamburger-menu {
+    color: #ffffff;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .first .bar {
+    width: 50%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .hamburger-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  div.hamburger-menu li {
+    width: 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+  }
+  
+  div.hamburger-menu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  div.hamburger-menu li:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #1a1a1a;
+  }
+  
+  #w {
+    color: black;
+    padding-top: 40px;
+    padding-bottom:40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  #w:hover {
+    background-color: lightgrey;
+  }
+  
+  div.hamburger-menu li ul {
+    display: none;
+  }
+  
+  div.hamburger-menu li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    padding: 0;
+    margin: 0 0 0 -1px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  
+  div.hamburger-menu li li {
+    border: none;
+    width: 150px;
+  }
+  
+  div.hamburger-menu li li a {
+    padding: 2px 2px 2px 10px;
+  }
+  
+  
+    .iphone-contactbtn {
+      display: none;
+    }
+  
+  
+    .hamburger-contactbtn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+    }
+    .ipad-contactbtn {
+    padding-left: 15px;
+    }
+  
+    .hire-me {
+      background-color: #00ff80a9;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+  
+  
+  
+  /*iphone layout ----------------------------------*/
+  @media (max-width: 767px) {
+  
+    .header {
+      padding: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .header {
+      width: 92%;
+    }
+   .page {
+    flex-direction: column;
+   }
+   
+   .sidebar {
+    width: 90%;
+   }
+  
+   .main-content {
+    width: 85%;
+   }
+  
+    .hire-me {
+      background-color: #00ff80a9;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      font-size: 16px;
+  
+    }
+  
+    .mail-text {
+      display: none;
+    }
+  
+    .pc-contactbtn {
+      display: none;
+    }
+  
+    .ipad-contactbtn {
+      display:none;
+    }
+  
+    .iphone-contactbtn {
+      padding-right: 15px
+    }
+  
+    .logomail {
+      align-items: center;
+    }
+  
+  /* Hamburger Menu */
+  .navbar {
+    display: none;
+  }
+  div.hamburger-menu {
+    color: #ffffff;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .first .bar {
+    width: 50%;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  div.hamburger-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  div.hamburger-menu li {
+    width: 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+  }
+  
+  div.hamburger-menu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  div.hamburger-menu li:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #1a1a1a;
+  }
+  
+  #w {
+    color: black;
+    padding-top: 40px;
+    padding-bottom:40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  #w:hover {
+    background-color: lightgrey;
+  }
+  
+  div.hamburger-menu li ul {
+    display: none;
+  }
+  
+  div.hamburger-menu li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    padding: 0;
+    margin: 0 0 0 -1px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  
+  div.hamburger-menu li li {
+    border: none;
+    width: 150px;
+  }
+  
+  div.hamburger-menu li li a {
+    padding: 2px 2px 2px 10px;
+  }
+  
+  .title-text {
+    display: none;
+  }
+  
+  }
+  
+
+  @media (max-width: 930px) {
+
+    .container {
+      flex-direction: column;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+
+    .header {
+      width: 89%;
+    }
+
+   .sidebar {
+    width: 85%;
+   }
+  
+   .main-content {
+    width: 80%;
+   }
+
+   .container {
+    margin-left: 15px;
+   }
+  }

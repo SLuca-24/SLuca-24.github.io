@@ -395,10 +395,15 @@ div.hamburger-menu {
   background-color: rgb(255, 255, 255);
 }
 
-div.hamburger-menu ul {
+.hamburger-menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  
+
+  
+
+  
 }
 
 div.hamburger-menu li {
