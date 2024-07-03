@@ -130,6 +130,10 @@ justify-content: center;
     font-size: 22px;
     min-width: 101px;
   }
+
+  .hire-me:hover {
+    transform: scale(1.09);
+  }
   
   .navbar {
     display: flex;
@@ -145,6 +149,10 @@ justify-content: center;
     text-decoration: none;
     font-size: 22px;
   }
+
+  .navbar a:hover {
+    transform: scale(1.09);
+  }
   
   .logomail {
     display: flex;
@@ -155,7 +163,10 @@ justify-content: center;
     display: flex;
     max-height: 80px;
     max-width: 80px;
-    
+  }
+
+  .logo-div:hover {
+    transform: scale(1.15);
   }
   
   .logo-div img {

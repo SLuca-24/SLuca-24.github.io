@@ -39,10 +39,12 @@ body {
   border: solid 3px #4d4b4b;
   border-radius: 20px;
   box-sizing: border-box;
+  animation: slideInRight 0.8s ease-in-out;
 }
 
 .profile-pic {
   margin: 50px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .profile-pic img {
@@ -71,6 +73,10 @@ body {
   margin: 20px 0;
 }
 
+.social-media a:hover {
+  transform: scale(1.1)
+}
+
 .social-media a img {
   width: 50px;
   height: 50px;
@@ -86,6 +92,10 @@ body {
   font-size: 16px;
 }
 
+.hire-me:hover {
+  transform: scale(1.09);
+}
+
 .main-content {
   flex: 1;
   width: 100%;
@@ -98,6 +108,7 @@ body {
   border-radius: 20px;
   margin: 20px 10px;
   box-sizing: border-box;
+  animation: slideInLeft 0.8s ease-in-out;
 }
 
 .introduction p {
@@ -157,6 +168,7 @@ body {
   margin-left: 60px;
   margin-right: 60px;
   margin-bottom: 20px;
+  animation: slideInTop 0.8s ease-in-out;
 }
 
 .headerin {
@@ -206,6 +218,10 @@ body {
   font-size: 22px;
 }
 
+.navbar a:hover {
+  transform: scale(1.09);
+}
+
 .logomail {
   display: flex;
   flex-direction: row;
@@ -215,6 +231,10 @@ body {
   display: flex;
   max-height: 80px;
   max-width: 80px;
+}
+
+.logo-div:hover {
+  transform: scale(1.15);
 }
 
 .logo-div img {
@@ -572,4 +592,57 @@ body {
   }
 }
 
+
+/*animations*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes buttonHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 

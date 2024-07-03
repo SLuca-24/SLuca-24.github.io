@@ -71,6 +71,12 @@ body section {
   text-decoration: none;
 }
 
+.hire-me:hover {
+  transform: scale(1.09);
+}
+
+
+
 .navbar {
   display: flex;
   padding-left: 15px;
@@ -86,6 +92,10 @@ body section {
   font-size: 22px;
 }
 
+.navbar a:hover {
+  transform: scale(1.09);
+}
+
 .logomail {
   display: flex;
   flex-direction: row;
@@ -95,7 +105,10 @@ body section {
   display: flex;
   max-height: 80px;
   max-width: 80px;
-  
+}
+
+.logo-div:hover {
+  transform: scale(1.15);
 }
 
 .logo-div img {
@@ -629,73 +642,6 @@ div.hamburger-menu li li a {
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
