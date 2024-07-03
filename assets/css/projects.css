@@ -33,9 +33,12 @@ body {
     color:white;
     width: 500px;
     padding: 10px;
-    
-    
+    animation: slideInLeft 0.8s ease-in-out; 
 }
+
+ .work2 {
+  animation: slideInRight 0.8s ease-in-out; 
+ }
 
 img {
     max-width: 100%;
@@ -96,6 +99,7 @@ justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
+    animation: slideInTop 0.8s ease-in-out;
   }
   
   .headerin {
@@ -511,6 +515,59 @@ justify-content: center;
   
   }
   
+
+  /*animations*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes buttonHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
   
   
   

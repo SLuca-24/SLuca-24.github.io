@@ -27,6 +27,7 @@ body section {
   padding-bottom: 20px;
   margin-top: 20px;
   border-radius: 50px;
+  animation: slideInTop 0.8s ease-in-out;
 }
 
 .headerin {

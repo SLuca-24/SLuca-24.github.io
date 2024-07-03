@@ -39,7 +39,7 @@ body {
   border: solid 3px #4d4b4b;
   border-radius: 20px;
   box-sizing: border-box;
-  animation: slideInRight 0.8s ease-in-out;
+  animation: slideInLeft 0.8s ease-in-out;
 }
 
 .profile-pic {
@@ -108,7 +108,7 @@ body {
   border-radius: 20px;
   margin: 20px 10px;
   box-sizing: border-box;
-  animation: slideInLeft 0.8s ease-in-out;
+  animation: slideInRight 0.8s ease-in-out;
 }
 
 .introduction p {
