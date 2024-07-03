@@ -68,6 +68,7 @@ body section {
   cursor: pointer;
   font-size: 22px;
   min-width: 101px;
+  text-decoration: none;
 }
 
 .navbar {
@@ -392,6 +393,7 @@ body section {
   display:none;
 }
 
+
 /* Hamburger Menu */
 .navbar {
   display: none;
@@ -413,11 +415,6 @@ div.hamburger-menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  
-
-  
-
-  
 }
 
 div.hamburger-menu li {
