@@ -39,7 +39,7 @@ body {
   border: solid 3px #4d4b4b;
   border-radius: 20px;
   box-sizing: border-box;
-  animation: slideInLeft 0.8s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .profile-pic {
@@ -51,6 +51,7 @@ body {
   width: 100%;
   border-radius: 10px;
 }
+
 
 .contact-info {
   text-align: center;
@@ -108,7 +109,7 @@ body {
   border-radius: 20px;
   margin: 20px 10px;
   box-sizing: border-box;
-  animation: slideInRight 0.8s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .introduction p {

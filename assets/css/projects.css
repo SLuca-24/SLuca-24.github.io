@@ -33,12 +33,9 @@ body {
     color:white;
     width: 500px;
     padding: 10px;
-    animation: slideInLeft 0.8s ease-in-out; 
+    animation: fadeIn 1.5s ease-in-out;
 }
 
- .work2 {
-  animation: slideInRight 0.8s ease-in-out; 
- }
 
 img {
     max-width: 100%;
