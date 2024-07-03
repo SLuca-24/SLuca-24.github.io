@@ -303,23 +303,47 @@ body section {
 }
 
 /* Contact Section */
+.contact {
+  background-color: #1a1a1a;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  max-width: 100%;
+  margin: 0 auto 20px;
+  font-size: 20px;
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  animation: slideInRight 1.5s ease-in-out;
+  gap: 15px;
 }
 
 .contact input,
-.contact textarea {
+.contact textarea,
+.contact select {
   width: 100%;
-  max-width: 500px;
+  max-width: 1000px;
   padding: 10px;
   border: 1px solid #333;
   border-radius: 5px;
   background-color: #333;
   color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+   
+}
+
+.contact textarea {
+  height: 150px;
 }
 
 .contact-btn {
@@ -329,8 +353,7 @@ body section {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 20px;
   transition: background-color 0.3s ease;
 }
 
@@ -644,6 +667,34 @@ div.hamburger-menu li li a {
 
 }
 
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .contact h2 {
+      font-size: 40px;
+  }
+
+  .contact p {
+      font-size: 17px;
+  }
+
+  .contact input,
+  .contact textarea,
+  .contact select {
+      font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contact input,
+  .contact textarea,
+  .contact select {
+      font-size: 12px;
+  }
+}
 
 
 /* Animations */
