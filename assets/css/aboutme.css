@@ -1,408 +1,394 @@
 body {
-    font-family: Arial;
-    background-color: #1A1A1A;
-    color: #ffffff;
-    display: flex;
+  font-family: Arial;
+  background-color: #1A1A1A;
+  color: #ffffff;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: #1A1A1A;
-    min-width: 0;
+  min-height: 100vh;
+  margin: 0;
+}
 
-    
-  }
-  
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #1A1A1A;
+  align-items: center;
+  box-sizing: border-box;
+}
 
 .page {
   display: flex;
   flex-direction: row;
-
+  width: 100%;
+  margin-left: 60px;
+  margin-right: 60px;
+  box-sizing: border-box;
 }
 
+.sidebar {
+  width: 30%;
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+  border: solid 3px #4d4b4b;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
 
-  .sidebar {
-    width: 30%;
-    background-color: #000;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:20px;
-    margin-left: 10px;
-    margin-right: 30px;
-    border:solid 3px #4d4b4b;
-    border-radius: 20px;
-  }
+.profile-pic {
+  margin: 50px;
+}
 
-  .profile-pic {
-    margin: 50px;
-  }
-  
-  .profile-pic img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .contact-info {
-    text-align: center;
-  }
-  
-  .contact-info h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-info p {
-    font-size: 20px;
-    margin: 5px 0;
-  }
-  
-  .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-  }
-  
-  .social-media a img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .hire-me {
-    background-color: #00ff80a9;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .main-content {
-    flex: 1;
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    border:solid 3px #4d4b4b;
-    border-radius: 20px;
-    margin-top:20px;
-    margin-right: 10px;
-  }
-  
-  .introduction p {
-    font-size: 30px;
-    color: white;
-    letter-spacing: 2px;
-  }
-  
-  .introduction h1 {
-    font-size: 40px;
-    line-height: 1.2;
-    color: #00ff80a9;
-  }
-  
-  .introduction h1 .highlight {
-    color: white;
-  }
-  
-  .introduction h1, .introduction p {
-    margin: 10px 0;
-  }
-  
-  .stats {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+.profile-pic img {
+  width: 100%;
+  border-radius: 10px;
+}
 
-  }
-  
-  .stats > div {
-    text-align: center;
-  }
-  
-  .stats h2 {
-    font-size: 40px;
-    color: #00ff80a9;
-  }
+.contact-info {
+  text-align: center;
+}
 
-  .singlestats:hover {
-    transform: scale(1.1);
-  }
-  
-  .stats p {
-    font-size: 20px;
-  }
-  
+.contact-info h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
 
+.contact-info p {
+  font-size: 20px;
+  margin: 5px 0;
+}
 
-  .header {
-    margin: 10px;
-    background-color: #1a1a1a;
-    padding: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border:solid 3px #4d4b4b;
-    border-radius: 20px;
-  }
-  
-  .headerin {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-  .leftside {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .hire-me {
-    background-color: #00ff80a9;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-    font-size: 22px;
-    min-width: 101px;
-  }
-  
-  .navbar {
-    display: flex;
-    padding-left: 15px;
-  }
-  
-  .navbar a {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
-    font-size: auto;
-    color:white;
-    text-decoration: none;
-    font-size: 22px;
-  }
-  
-  .logomail {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .logo-div {
-    display: flex;
-    max-height: 80px;
-    max-width: 80px;
-    
-  }
-  
-  .logo-div img {
-    width: 100%;
-    height: 100%;
-    border-radius: 150px;
-  }
-  
-  /* mail */
-  .mail-text {
-    display: flex;
-    color: #ffffff;
-    height: 100%;
-    align-items:center;
-    padding-right: 20px;
-    font-size:22px;
-  }
-  
-  
-  
-  
-  
-  /* Media*/
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
 
-  /*big layout*/
-  @media(min-width: 992px) {
-  
+.social-media a img {
+  width: 50px;
+  height: 50px;
+}
+
+.hire-me {
+  background-color: #00ff80a9;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border: solid 3px #4d4b4b;
+  border-radius: 20px;
+  margin: 20px 10px;
+  box-sizing: border-box;
+}
+
+.introduction p {
+  font-size: 30px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.introduction h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #00ff80a9;
+}
+
+.introduction h1 .highlight {
+  color: white;
+}
+
+.introduction h1, .introduction p {
+  margin: 10px 0;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stats > div {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.stats h2 {
+  font-size: 40px;
+  color: #00ff80a9;
+}
+
+.singlestats:hover {
+  transform: scale(1.1);
+}
+
+.stats p {
+  font-size: 20px;
+}
+
+.header {
+  background-color: #1a1a1a;
+  padding: 40px 40px;
+  border: solid 3px #4d4b4b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+}
+
+.headerin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hire-me {
+  background-color: #00ff80a9;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 22px;
+  min-width: 101px;
+}
+
+.navbar {
+  display: flex;
+  padding-left: 15px;
+}
+
+.navbar a {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  font-size: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.logomail {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-div {
+  display: flex;
+  max-height: 80px;
+  max-width: 80px;
+}
+
+.logo-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+}
+
+/* mail */
+.mail-text {
+  display: flex;
+  color: #ffffff;
+  height: 100%;
+  align-items: center;
+  padding-right: 20px;
+  font-size: 22px;
+}
+
+/* Media */
+
+/*big layout*/
+@media (min-width: 992px) {
   .hamburger-menu {
-    display: none;
+      display: none;
   }
-  
+
   .iphone-contactbtn {
-    display: none;
+      display: none;
   }
-  
+
   .ipad-contactbtn {
-    display: none;
+      display: none;
   }
 
   .hire-me {
-    background-color: #00ff80a9;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-    font-size: 22px;
-    width:124px;
+      background-color: #00ff80a9;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      font-size: 22px;
+      width: 124px;
   }
-    
-    .navbar a {
+
+  .navbar a {
       display: flex;
       flex-direction: row;
       padding: 15px;
       font-size: auto;
-      color:white;
+      color: white;
       text-decoration: none;
       font-size: 22px;
-    }
   }
-  
-  
-  
-  
-  
-  /*ipad layout*/
-  @media (min-width: 768px) and (max-width: 991px) {
-  
+}
+
+/*ipad layout*/
+@media (min-width: 768px) and (max-width: 991px) {
   .header {
-    width: 85%;
+      width: 85%;
   }
- .page {
-  flex-direction: column;
- }
- 
- .sidebar {
-  width: 90%;
- }
 
- .main-content {
-  width: 87%;
- }
-  
+  .page {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 98%;
+  }
+
+  .main-content {
+      width: 98%;
+  }
+
   .pc-contactbtn {
-    display: none;
-  }
-  
-  .iphone-contactbtn {
-    display:none;
-  }
-  
-  /* Hamburger Menu */
-  .navbar {
-    display: none;
-  }
-  
-  div.hamburger-menu {
-    color: #ffffff;
-    max-width: 50px;
-    max-height: 50px;
-  }
-  
-  .first .bar {
-    width: 50%;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  .hamburger-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+      display: none;
   }
 
-  div.hamburger-menu li {
-    width: 100px;
-    float: left;
-    margin: 0;
-    padding: 0;
-    color: rgb(255, 255, 255);
-  }
-  
-  div.hamburger-menu a {
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-  }
-  
-  div.hamburger-menu li:hover {
-    color: black;
-    text-decoration: none;
-    background-color: #1a1a1a;
-  }
-  
-  #w {
-    color: black;
-    padding-top: 40px;
-    padding-bottom:40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  #w:hover {
-    background-color: lightgrey;
-  }
-  
-  div.hamburger-menu li ul {
-    display: none;
-  }
-  
-  div.hamburger-menu li:hover ul {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 150px;
-    padding: 0;
-    margin: 0 0 0 -1px;
-    border: 1px solid black;
-    background-color: white;
-  }
-  
-  div.hamburger-menu li li {
-    border: none;
-    width: 150px;
-  }
-  
-  div.hamburger-menu li li a {
-    padding: 2px 2px 2px 10px;
-  }
-  
-  
-    .iphone-contactbtn {
+  .iphone-contactbtn {
       display: none;
-    }
-  
-  
-    .hamburger-contactbtn {
+  }
+
+  .navbar {
+      display: none;
+  }
+
+  .hamburger-menu {
+      color: #ffffff;
+      max-width: 50px;
+      max-height: 50px;
+  }
+
+  .hamburger-menu .bar {
+      width: 50%;
+      height: 4px;
+      background-color: rgb(255, 255, 255);
+  }
+
+  .hamburger-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+  }
+
+  .hamburger-menu li {
+      width: 100px;
+      float: left;
+      margin: 0;
+      padding: 0;
+      color: rgb(255, 255, 255);
+  }
+
+  .hamburger-menu a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+  }
+
+  .hamburger-menu li:hover {
+      color: black;
+      text-decoration: none;
+      background-color: #1a1a1a;
+  }
+
+  #w {
+      color: black;
+      padding: 40px 30px;
+      font-size: 20px;
+      font-weight: 500;
+  }
+
+  #w:hover {
+      background-color: lightgrey;
+  }
+
+  .hamburger-menu li ul {
+      display: none;
+  }
+
+  .hamburger-menu li:hover ul {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      width: 150px;
+      padding: 0;
+      margin: 0 0 0 -1px;
+      border: 1px solid black;
+      background-color: white;
+  }
+
+  .hamburger-menu li li {
+      border: none;
+      width: 150px;
+  }
+
+  .hamburger-menu li li a {
+      padding: 2px 10px;
+  }
+
+  .iphone-contactbtn {
+      display: none;
+  }
+
+  .hamburger-contactbtn {
       display: flex;
       flex-direction: row;
       align-items: center;
-      
-    }
-    .ipad-contactbtn {
-    padding-left: 15px;
-    }
-  
-    .hire-me {
+  }
+
+  .ipad-contactbtn {
+      padding-left: 15px;
+  }
+
+  .hire-me {
       background-color: #00ff80a9;
       color: #000;
       padding: 10px 20px;
@@ -410,36 +396,32 @@ body {
       border-radius: 100px;
       cursor: pointer;
       font-size: 16px;
-    }
   }
-  
-  
-  
-  /*iphone layout ----------------------------------*/
-  @media (max-width: 767px) {
-  
-    .header {
+}
+
+/*iphone layout */
+@media (max-width: 767px) {
+
+  .header {
       padding: 10px;
       padding-top: 20px;
       padding-bottom: 20px;
-    }
-
-    .header {
       width: 92%;
-    }
-   .page {
-    flex-direction: column;
-   }
-   
-   .sidebar {
-    width: 90%;
-   }
-  
-   .main-content {
-    width: 85%;
-   }
-  
-    .hire-me {
+  }
+
+  .page {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 90%;
+  }
+
+  .main-content {
+      width: 85%;
+  }
+
+  .hire-me {
       background-color: #00ff80a9;
       color: #000;
       padding: 10px 20px;
@@ -447,139 +429,147 @@ body {
       border-radius: 100px;
       cursor: pointer;
       font-size: 16px;
-  
-    }
-  
-    .mail-text {
+  }
+
+  .mail-text {
       display: none;
-    }
-  
-    .pc-contactbtn {
+  }
+
+  .pc-contactbtn {
       display: none;
-    }
-  
-    .ipad-contactbtn {
-      display:none;
-    }
-  
-    .iphone-contactbtn {
-      padding-right: 15px
-    }
-  
-    .logomail {
+  }
+
+  .ipad-contactbtn {
+      display: none;
+  }
+
+  .iphone-contactbtn {
+      padding-right: 15px;
+  }
+
+  .logomail {
       align-items: center;
-    }
-  
-  /* Hamburger Menu */
+  }
+
   .navbar {
-    display: none;
+      display: none;
   }
-  div.hamburger-menu {
-    color: #ffffff;
-    max-width: 50px;
-    max-height: 50px;
+
+  .hamburger-menu {
+      color: #ffffff;
+      max-width: 50px;
+      max-height: 50px;
   }
-  
-  .first .bar {
-    width: 50%;
-    height: 4px;
-    background-color: rgb(255, 255, 255);
+
+  .hamburger-menu .bar {
+      width: 50%;
+      height: 4px;
+      background-color: rgb(255, 255, 255);
   }
-  
-  div.hamburger-menu ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+
+  .hamburger-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
   }
-  
-  div.hamburger-menu li {
-    width: 100px;
-    float: left;
-    margin: 0;
-    padding: 0;
-    color: rgb(255, 255, 255);
+
+  .hamburger-menu li {
+      width: 100px;
+      float: left;
+      margin: 0;
+      padding: 0;
+      color: rgb(255, 255, 255);
   }
-  
-  div.hamburger-menu a {
-    display: block;
-    padding: 5px;
-    text-decoration: none;
+
+  .hamburger-menu a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
   }
-  
-  div.hamburger-menu li:hover {
-    color: black;
-    text-decoration: none;
-    background-color: #1a1a1a;
+
+  .hamburger-menu li:hover {
+      color: black;
+      text-decoration: none;
+      background-color: #1a1a1a;
   }
-  
+
   #w {
-    color: black;
-    padding-top: 40px;
-    padding-bottom:40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-    font-weight: 500;
+      color: black;
+      padding: 40px 30px;
+      font-size: 20px;
+      font-weight: 500;
   }
-  
+
   #w:hover {
-    background-color: lightgrey;
+      background-color: lightgrey;
   }
-  
-  div.hamburger-menu li ul {
-    display: none;
+
+  .hamburger-menu li ul {
+      display: none;
   }
-  
-  div.hamburger-menu li:hover ul {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    width: 150px;
-    padding: 0;
-    margin: 0 0 0 -1px;
-    border: 1px solid black;
-    background-color: white;
+
+  .hamburger-menu li:hover ul {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      width: 150px;
+      padding: 0;
+      margin: 0 0 0 -1px;
+      border: 1px solid black;
+      background-color: white;
   }
-  
-  div.hamburger-menu li li {
-    border: none;
-    width: 150px;
+
+  .hamburger-menu li li {
+      border: none;
+      width: 150px;
   }
-  
-  div.hamburger-menu li li a {
-    padding: 2px 2px 2px 10px;
+
+  .hamburger-menu li li a {
+      padding: 2px 10px;
   }
-  
+
   .title-text {
-    display: none;
+      display: none;
   }
-  
+}
+
+
+@media (max-width: 550px) {
+  .header, .sidebar, .main-content {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
   }
-  
 
-  @media (max-width: 930px) {
-
-    .container {
+  .stats {
       flex-direction: column;
-    }
+      align-items: center;
   }
 
+  .stats > div {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 930px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
 
-    .header {
+@media (max-width: 767px) {
+  .header, .sidebar, .main-content {
       width: 89%;
-    }
-
-   .sidebar {
-    width: 85%;
-   }
-  
-   .main-content {
-    width: 80%;
-   }
-
-   .container {
-    margin-left: 15px;
-   }
+      margin-left: auto;
+      margin-right: auto;
   }
+
+  .container {
+      margin-left: 0;
+      align-items: center;
+  }
+}
+
+

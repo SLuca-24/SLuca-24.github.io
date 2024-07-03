@@ -1,3 +1,9 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -19,6 +25,8 @@ body section {
   padding: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 50px;
 }
 
 .headerin {
@@ -26,6 +34,14 @@ body section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-intro-bg {
+  background-image: url('../img/5d4e60e1-af3e-4740-a295-b28f8d9b95dc_LE_auto_x2.jpg');
+  background-size: cover;
+  background-image: center;
+  animation: fadeIn 1.5s ease-in-out;
+  border: solid #1a1a1a 0.01px;
 }
 
 /* Menu big screen*/
@@ -104,10 +120,7 @@ body section {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url('../img/btcindex\ -\ Copy\ \(2\).jpeg');
-  background-size: cover;
-  background-image: center;
-  animation: fadeIn 1.5s ease-in-out;
+  
 }
 
 .intro h1 {
@@ -225,6 +238,7 @@ body section {
   padding: 50px 0;
   text-align: center;
   color: #ffffff;
+
 }
 
 .skills h2 {

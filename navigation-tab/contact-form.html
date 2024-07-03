@@ -3,20 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luca Sannia | Contact form</title>
     <link rel="stylesheet" href="../assets/css/contact-form.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/transparent_logo_v2.png">
     <meta property="og:image" content="https://www.esempio.com/immagine.jpg" />
+ 
+
 </head>
 <body>
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact</h2>
+            <h2>Contact form</h2>
             <p>If you have any questions or would like to work with me, reach out to me through this form!</p>
+            
             <form action="#" method="post">
+               
                 <input type="text" name="first_name" placeholder="First Name" required>
+                
                 <input type="text" name="last_name" placeholder="Last Name" required>
+                
                 <input type="email" name="email" placeholder="Email" required>
+                
+                <select name="request_type" required>
+                    <option value="" disabled selected>Type of request</option>
+                    <option value="Info">General information</option>
+                    <option value="Collab">Collaboration</option>
+                    <option value="Project development">Project development</option>
+                    <option value="Employment">Employment</option>
+                    <option value="Other">Other type of request, please describe it in the message box below</option>
+                </select>
+
                 <textarea name="message" rows="5" placeholder="Message" required></textarea>
+               
+                <select name="how_did_you_find_me" required>
+                    <option value="" disabled selected>How did you find me?</option>
+                    <option value="social">Social Media</option>
+                    <option value="friend">Friend or Family</option>
+                    <option value="online">Online Search</option>
+                    <option value="advertisement">Advertisement</option>
+                    <option value="word_of_mouth">Other</option>
+                </select>
+
                 <button type="submit" class="contact-btn">Send</button>
             </form>
         </div>
