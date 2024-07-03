@@ -558,7 +558,10 @@ div.hamburger-menu li li a {
     border-radius: 100px;
     cursor: pointer;
     font-size: 16px;
+  }
 
+  .logo-div {
+    padding-right: 10px;
   }
 
   .mail-text {
@@ -597,13 +600,14 @@ div.hamburger-menu {
   background-color: rgb(255, 255, 255);
 }
 
-div.hamburger-menu ul {
+.hamburger-menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  padding-left: 10px;
 }
 
-div.hamburger-menu li {
+.hamburger-menu li {
   width: 100px;
   float: left;
   margin: 0;
@@ -611,13 +615,13 @@ div.hamburger-menu li {
   color: rgb(255, 255, 255);
 }
 
-div.hamburger-menu a {
+.hamburger-menu a {
   display: block;
   padding: 5px;
   text-decoration: none;
 }
 
-div.hamburger-menu li:hover {
+.hamburger-menu li:hover {
   color: black;
   text-decoration: none;
   background-color: #1a1a1a;
