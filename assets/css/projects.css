@@ -130,11 +130,17 @@ justify-content: center;
     cursor: pointer;
     font-size: 22px;
     min-width: 101px;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+    background: linear-gradient(to right, #00ff80a9, #00ff802d);
+  }
+  
+  .hire-me:hover {
+    background: linear-gradient(to right, #00ff802d, #00ff80a9);
   }
 
-  .hire-me:hover {
-    transform: scale(1.09);
-  }
   
   .navbar {
     display: flex;
@@ -176,7 +182,6 @@ justify-content: center;
     border-radius: 150px;
   }
   
-  /* mail */
   .mail-text {
     display: flex;
     color: #ffffff;
@@ -184,6 +189,11 @@ justify-content: center;
     align-items:center;
     padding-right: 20px;
     font-size:22px;
+    transition: color 0.6s ease; 
+  }
+  
+  .mail-text:hover {
+    color: #00ff8067;
   }
   
   
@@ -217,16 +227,6 @@ justify-content: center;
   
   
   @media (min-width: 992px) and (max-width: 1155px) {
-    .hire-me {
-      background-color: #00ff80a9;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      font-size: 22px;
-      width:124px;
-    }
       
       .navbar a {
         display: flex;
@@ -373,15 +373,6 @@ justify-content: center;
     padding-left: 15px;
     }
   
-    .hire-me {
-      background-color: #00ff80a9;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      font-size: 16px;
-    }
   }
   
   
@@ -393,17 +384,6 @@ justify-content: center;
       padding: 10px;
       padding-top: 20px;
       padding-bottom: 20px;
-    }
-  
-    .hire-me {
-      background-color: #00ff80a9;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      font-size: 16px;
-  
     }
   
     .mail-text {

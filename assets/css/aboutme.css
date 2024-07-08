@@ -86,19 +86,6 @@ body {
   height: 50px;
 }
 
-.hire-me {
-  background-color: #00ff80a9;
-  color: #000;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.hire-me:hover {
-  transform: scale(1.09);
-}
 
 .main-content {
   flex: 1;
@@ -207,8 +194,16 @@ body {
   cursor: pointer;
   font-size: 22px;
   min-width: 101px;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
+  background: linear-gradient(to right, #00ff80a9, #00ff802d);
 }
 
+.hire-me:hover {
+  background: linear-gradient(to right, #00ff802d, #00ff80a9);
+}
 .navbar {
   display: flex;
   padding-left: 15px;
@@ -249,14 +244,18 @@ body {
   border-radius: 150px;
 }
 
-/* mail */
 .mail-text {
   display: flex;
   color: #ffffff;
   height: 100%;
-  align-items: center;
+  align-items:center;
   padding-right: 20px;
-  font-size: 22px;
+  font-size:22px;
+  transition: color 0.6s ease; 
+}
+
+.mail-text:hover {
+  color: #00ff8067;
 }
 
 /* Media */
@@ -275,16 +274,7 @@ body {
       display: none;
   }
 
-  .hire-me {
-      background-color: #00ff80a9;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      font-size: 22px;
-      width: 124px;
-  }
+
 
   .navbar a {
       display: flex;
@@ -414,15 +404,7 @@ body {
       padding-left: 15px;
   }
 
-  .hire-me {
-      background-color: #00ff80a9;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      font-size: 16px;
-  }
+
 }
 
 /*iphone layout */
@@ -447,15 +429,6 @@ body {
       width: 85%;
   }
 
-  .hire-me {
-      background-color: #00ff80a9;
-      color: #000;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 100px;
-      cursor: pointer;
-      font-size: 16px;
-  }
 
   .mail-text {
       display: none;

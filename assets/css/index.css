@@ -11,6 +11,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #1a1a1a;
   color: #ffffff;
+  margin: 0px;
 
 }
 
@@ -73,6 +74,9 @@ body {
   font-size: 22px;
   min-width: 101px;
   text-decoration: none;
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
   background: linear-gradient(to right, #00ff80a9, #00ff802d);
 }
 
@@ -131,6 +135,7 @@ body {
   align-items:center;
   padding-right: 20px;
   font-size:22px;
+  transition: color 0.6s ease; 
 }
 
 .mail-text:hover {
@@ -383,9 +388,21 @@ body {
 /* Media*/
 
 
-@media (min-width: 992px) and (max-width: 1155px) {
+/*big layout*/
+@media (min-width: 1111px) and (max-width: 3500px) {
+
+  .header {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  
+  section {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
   .hire-me {
-    background-color: #00ff80a9;
     color: #000;
     padding: 10px 20px;
     border: none;
@@ -404,11 +421,33 @@ body {
       text-decoration: none;
       font-size: 22px;
     }
+
+    .hamburger-menu {
+      display: none;
+    }
+    
+    .iphone-contactbtn {
+      display: none;
+    }
+    
+    .ipad-contactbtn {
+      display: none;
+    }
   }
 
 
-/*big layout*/
-@media(min-width: 992px) {
+  @media (max-width:1380px) {
+  .mail-text {
+    display: none;
+  }
+  }
+
+
+
+
+
+
+  @media (min-width: 992px) and (max-width: 1110px) {
 
 .hamburger-menu {
   display: none;
@@ -421,6 +460,22 @@ body {
 .ipad-contactbtn {
   display: none;
 }
+
+
+.header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+section {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+
+
 }
 
 
@@ -431,6 +486,17 @@ body {
 /*ipad layout*/
 @media (min-width: 768px) and (max-width: 991px) {
 
+  .header {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  
+  section {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
 .pc-contactbtn {
   display: none;
 }
@@ -439,8 +505,18 @@ body {
   display:none;
 }
 
+.hire-me {
+  
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
 
-/* Hamburger Menu */
+
+
+}
+
 .navbar {
   display: none;
 }
@@ -537,15 +613,7 @@ div.hamburger-menu li li a {
   padding-left: 15px;
   }
 
-  .hire-me {
-    background-color: #00ff80a9;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+
 }
 
 
@@ -557,16 +625,6 @@ div.hamburger-menu li li a {
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-
-  .hire-me {
-    background-color: #00ff80a9;
-    color: #000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 100px;
-    cursor: pointer;
-    font-size: 16px;
   }
 
   .logo-div {
