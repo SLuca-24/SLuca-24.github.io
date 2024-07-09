@@ -50,6 +50,13 @@ body {
 .profile-pic img {
   width: 100%;
   border-radius: 10px;
+  transition: transform 0.9s ease;
+  transition: rotate 0.9s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.01);
+  transform: rotate(359deg);
 }
 
 
@@ -80,6 +87,11 @@ body {
 
 #email {
   text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+#email:hover {
+  color: #00ff8067;
 }
 .social-media a img {
   width: 50px;

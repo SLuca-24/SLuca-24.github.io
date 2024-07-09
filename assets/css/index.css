@@ -15,9 +15,7 @@ body {
   background-image: url('../img/9338080.jpg');
   background-size: cover;
   background-image: center;
-
 }
-
 
 .container {
   width: 80%;
@@ -218,7 +216,6 @@ body {
   border-radius: 100px;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .aboutme-btn-content:hover {
