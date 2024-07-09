@@ -16,13 +16,8 @@ body {
   background-size: cover;
   background-image: center;
 
- 
-
 }
 
-.body section {
-  margin-bottom: 60px;
-}
 
 .container {
   width: 80%;
@@ -35,6 +30,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 50px;
+  margin-bottom: 100px;
   border-radius: 40px;
   animation: slideInTop 0.8s ease-in-out;
 }
@@ -152,7 +148,8 @@ body {
 .intro {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .intro h1 {
@@ -176,6 +173,7 @@ body {
   padding: 50px 0;
   text-align: center;
   animation: fadeIn 1.5s ease-in-out;
+  margin-bottom: 100px;
 }
 
 .about h2,
@@ -507,6 +505,10 @@ section {
 
 .iphone-contactbtn {
   display:none;
+}
+
+.mail-text {
+  display: flex;
 }
 
 .hire-me {
