@@ -12,6 +12,11 @@ body {
   background-color: #1a1a1a;
   color: #ffffff;
   margin: 0px;
+  background-image: url('../img/9338080.jpg');
+  background-size: cover;
+  background-image: center;
+
+ 
 
 }
 
@@ -42,11 +47,11 @@ body {
 }
 
 .header-intro-bg {
-  background-image: url('../img/5d4e60e1-af3e-4740-a295-b28f8d9b95dc_LE_auto_x2.jpg');
+ /* background-image: url('../img/5d4e60e1-af3e-4740-a295-b28f8d9b95dc_LE_auto_x2.jpg');
   background-size: cover;
-  background-image: center;
+  background-image: center;*/
   animation: fadeIn 1.5s ease-in-out;
-  border: solid #1a1a1a 0.01px;
+ /* border: solid #1a1a1a 0.01px;*/
 }
 
 /* Menu big screen*/
@@ -82,7 +87,6 @@ body {
 
 .hire-me:hover {
   background: linear-gradient(to right, #00ff802d, #00ff80a9);
-  
 }
 
 
@@ -169,7 +173,6 @@ body {
 .projects,
 .skills,
 .contact {
-  background-color: #1a1a1a;
   padding: 50px 0;
   text-align: center;
   animation: fadeIn 1.5s ease-in-out;
@@ -210,8 +213,8 @@ body {
 }
 
 .aboutme-btn-content {
-  background-color: #00ff8067;
-  color:white;
+  border:solid 1px #00cc66;
+  color: #00cc66;
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 100px;
@@ -222,6 +225,7 @@ body {
 
 .aboutme-btn-content:hover {
   background-color: #00cc66;
+  color: white;
   transform: scale(1.05);
 }
 
@@ -262,7 +266,7 @@ body {
 
 /* Skills Section */
 .skills {
-  background-color: #1a1a1a;
+  /*background-color: #1a1a1a;*/
   padding: 50px 0;
   text-align: center;
   color: #ffffff;
@@ -317,7 +321,7 @@ body {
 
 /* Contact Section */
 .contact {
-  background-color: #1a1a1a;
+  /*background-color: #1a1a1a;*/
   padding: 50px 0;
   text-align: center;
 }
@@ -376,7 +380,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #1a1a1a;
+  /*background-color: #1a1a1a;*/
   text-align: center;
   padding: 20px 0;
 }
@@ -623,8 +627,11 @@ div.hamburger-menu li li a {
 
   .header {
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
+    margin-top: 10px;
+    position: sticky;
+    top:0;
   }
 
   .logo-div {
