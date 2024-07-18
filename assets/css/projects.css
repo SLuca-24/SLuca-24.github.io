@@ -20,9 +20,6 @@ body {
 }
 
 .work1, .work2 {
-    border: solid;
-    border-color: #1a1a1a;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -33,6 +30,11 @@ body {
     animation: fadeIn 1.5s ease-in-out;
     border: solid 3px #4d4b4b;
     border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.work1:hover, .work2:hover {
+  transform: translateY(-10px);
 }
 
 
