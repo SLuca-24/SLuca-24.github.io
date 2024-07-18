@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial';
   background-color: #1a1a1a;
   color: #ffffff;
   margin: 0px;
@@ -24,9 +24,7 @@ body {
 
 .header {
   background-color: #1a1a1a;
-  padding: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 30px 40px;
   margin-top: 50px;
   margin-bottom: 100px;
   border-radius: 40px;
@@ -41,14 +39,9 @@ body {
 }
 
 .header-intro-bg {
- /* background-image: url('../img/5d4e60e1-af3e-4740-a295-b28f8d9b95dc_LE_auto_x2.jpg');
-  background-size: cover;
-  background-image: center;*/
   animation: fadeIn 1.5s ease-in-out;
- /* border: solid #1a1a1a 0.01px;*/
 }
 
-/* Menu big screen*/
 .nav-div {
   display: flex;
   flex-direction: row;
@@ -62,6 +55,7 @@ body {
   flex-direction: row;
   align-items: center;
 }
+
 
 .hire-me {
   background-color: #00ff80a9;
@@ -83,8 +77,6 @@ body {
   background: linear-gradient(to right, #00ff802d, #00ff80a9);
 }
 
-
-
 .navbar {
   display: flex;
   padding-left: 15px;
@@ -95,7 +87,7 @@ body {
   flex-direction: row;
   padding: 30px;
   font-size: auto;
-  color:white;
+  color: white;
   text-decoration: none;
   font-size: 22px;
 }
@@ -105,15 +97,10 @@ body {
 }
 
 
-.logomail {
-  display: flex;
-  flex-direction: row;
-}
-
 .logo-div {
   display: flex;
-  max-height: 90px;
-  max-width: 90px;
+  max-height: 100px;
+  max-width: 100px;
 }
 
 .logo-div:hover {
@@ -183,8 +170,6 @@ body {
   animation: slideInDown 1.5s ease-in-out;
 }
 
-
-
 .about p,
 .projects p,
 .skills p,
@@ -196,8 +181,6 @@ body {
 }
 
 /*about section*/
-
-
 .about p {
   font-size: 25px;
 }
@@ -205,12 +188,9 @@ body {
 .aboutme-btn-link {
   text-decoration: none;
   display: inline-block;
-  color:white
-}
-
-.aboutme-btn-content {
-  border:solid 1px #00cc66;
-  color: #00cc66;
+  color:white;
+  border:solid 1px #00cc6673;
+  color: #00cc6673;
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 100px;
@@ -218,8 +198,8 @@ body {
   cursor: pointer;
 }
 
-.aboutme-btn-content:hover {
-  background-color: #00cc66;
+.aboutme-btn-link:hover {
+  background-color: #00cc6673;
   color: white;
   transform: scale(1.05);
 }
@@ -289,7 +269,6 @@ body {
   overflow: hidden;
   height: 20px;
   margin-bottom: 60px;
-  position: relative;
   animation: progressAnimation 2s ease-in-out forwards;
 }
 
@@ -374,15 +353,83 @@ body {
 }
 
 /* Footer */
-.footer {
-  /*background-color: #1a1a1a;*/
-  text-align: center;
+
+footer {
+  background-color: #1a1a1a;
+  color: #ecf0f1;
   padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
 }
 
-.footer p {
-  margin: 5px 0;
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer-content a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+
+#twitter:hover {
+  color: #3498db;
+}
+
+#linkedin:hover {
+  color: #3498db;
+}
+
+#github:hover {
+  color: grey;
+}
+
+#insta:hover {
+  color: rgb(255, 0, 128);
+}
+
+
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #ecf0f1;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.6s ease; 
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #7f8c8d;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
 
 /* Media*/
 
@@ -509,15 +556,11 @@ section {
 }
 
 .hire-me {
-  
   color: #000;
   padding: 10px 20px;
   border: none;
   border-radius: 100px;
   cursor: pointer;
-
-
-
 }
 
 .navbar {
@@ -633,14 +676,6 @@ div.hamburger-menu li li a {
     top:0;
   }
 
-  .logo-div {
-    padding-right: 10px;
-  }
-
-  .mail-text {
-    display: none;
-  }
-
   .pc-contactbtn {
     display: none;
   }
@@ -650,17 +685,29 @@ div.hamburger-menu li li a {
   }
 
   .iphone-contactbtn {
-    padding-right: 15px
+    padding-right: px;
   }
 
   .logomail {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    gap: 15px;
   }
+
+  .logo-div {
+    padding-right: 10px;
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+
 
 /* Hamburger Menu */
 .navbar {
   display: none;
 }
+
 div.hamburger-menu {
   color: #ffffff;
   max-width: 50px;
@@ -741,8 +788,8 @@ div.hamburger-menu li li a {
 .title-text {
   display: none;
 }
-
 }
+
 
 @media (max-width: 768px) {
   .container {

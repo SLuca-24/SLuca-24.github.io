@@ -5,11 +5,8 @@ body {
     font-family: Arial;
     padding: 0;
     font-size: 20px;
-    
-    background-image: url('../img/light.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #1a1a1a;
+
     
 
 }
@@ -34,6 +31,8 @@ body {
     width: 500px;
     padding: 10px;
     animation: fadeIn 1.5s ease-in-out;
+    border: solid 3px #4d4b4b;
+    border-radius: 20px;
 }
 
 
@@ -62,43 +61,26 @@ h1 {
 
 #linkalprogettostyle {
 text-decoration: none;
-color: lightblue;
 font-size: 20px;
+color: white;
+transition: color 0.6s ease; 
 }
 
 #linkalprogettostyle:hover {
     text-decoration: underline;
-    text-shadow: 0 4px 8px rgb(145, 145, 145);
+    color: #00ff80a9;
  }
-
-
-.footer{
-font-family: arial;
-font-size: 20px;
-font-weight: 400;
-margin-top: 200px;
-margin-right: 500px;
-margin-bottom: 30px;
-display: flex;
-flex: 1;
-width: 100%;
-color: rgb(202, 202, 202);
-display: flex;
-justify-content: center;
-}
-
-
 
   .header {
     
     background-color: #1a1a1a;
-    padding: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 30px 40px;
     border-radius: 20px;
     animation: slideInTop 0.8s ease-in-out;
     margin-top: 30px;
     margin-bottom: 50px;
+    border: solid 3px #4d4b4b;
+    border-radius: 20px;
   }
   
   .headerin {
@@ -170,8 +152,8 @@ justify-content: center;
   
   .logo-div {
     display: flex;
-    max-height: 80px;
-    max-width: 80px;
+    max-height: 100px;
+    max-width: 100px;
   }
 
   .logo-div:hover {
@@ -196,6 +178,86 @@ justify-content: center;
   
   .mail-text:hover {
     color: #00ff8067;
+  }
+
+
+  /* footer*/
+
+  footer {
+    background-color: #1a1a1a;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    border-top: solid 3px #4d4b4b;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .footer-content a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+  
+  
+  #twitter:hover {
+    color: #3498db;
+  }
+  
+  #linkedin:hover {
+    color: #3498db;
+  }
+  
+  #github:hover {
+    color: grey;
+  }
+  
+  #insta:hover {
+    color: rgb(255, 0, 128);
+  }
+  
+  
+  .social-links {
+    margin: 20px 0;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #ecf0f1;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.6s ease; 
+  }
+  
+  .social-links a:hover {
+    color: #3498db;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 10px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
   }
   
   
@@ -290,15 +352,12 @@ justify-content: center;
     background-color: rgb(255, 255, 255);
   }
   
-  .hamburger-menu ul {
+   .hamburger-menu ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     
-  
-    
-  
-    
+   
   }
   
   div.hamburger-menu li {
@@ -400,12 +459,17 @@ justify-content: center;
       display:none;
     }
   
-    .iphone-contactbtn {
-      padding-right: 15px
+    .logomail {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
     }
   
-    .logomail {
-      align-items: center;
+    .logo-div {
+      padding-right: 10px;
+      max-width: 90px;
+      max-height: 90px;
     }
   
   /* Hamburger Menu */
@@ -490,6 +554,10 @@ justify-content: center;
   
   .title-text {
     display: none;
+  }
+
+  footer {
+    width: 103.8%;
   }
   
   }
