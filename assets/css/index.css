@@ -309,7 +309,7 @@ body {
 
 .section-title {
   color:#00ff8067;
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -330,16 +330,17 @@ body {
   color: #00ff80a9;
   font-weight: bold;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .item-title {
-  font-size: 18px;
+  font-size: 25px;
   margin: 5px 0;
   font-weight: 700;
 }
 
 .item-location {
-  font-size: 16px;
+  font-size: 18px;
   color: #aaa;
   font-weight: 700;
 }
