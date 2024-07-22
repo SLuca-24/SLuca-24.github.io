@@ -241,7 +241,6 @@ body {
 
 /* Skills Section */
 .skills {
-  /*background-color: #1a1a1a;*/
   padding: 50px 0;
   text-align: center;
   color: #ffffff;
@@ -293,9 +292,61 @@ body {
   border-radius: 4px;
 }
 
+/*education section*/
+
+.container-edu {
+  margin-left: 250px;
+  margin-right: 250px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.my-experience, .my-education{
+  width: 50%;
+  
+}
+
+.section-title {
+  color:#00ff8067;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.item {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  transition: background-color 1s;
+}
+
+.item:hover{
+  background-color: #1a1a1a6e;
+}
+
+.item-date {
+  color: #00ff80a9;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.item-title {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.item-location {
+  font-size: 16px;
+  color: #aaa;
+  font-weight: 700;
+}
+
+
 /* Contact Section */
 .contact {
-  /*background-color: #1a1a1a;*/
   padding: 50px 0;
   text-align: center;
 }
@@ -660,6 +711,14 @@ div.hamburger-menu li li a {
   }
 
 
+  .container-edu {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 100px;
+  }
+
 }
 
 
@@ -699,6 +758,21 @@ div.hamburger-menu li li a {
     padding-right: 10px;
     max-width: 90px;
     max-height: 90px;
+  }
+
+  .container-edu {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .my-education, .my-experience {
+    width: 100%;
+  }
+
+  .section-title {
+    text-align: center;
   }
 
 
