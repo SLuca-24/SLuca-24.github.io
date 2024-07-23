@@ -174,19 +174,20 @@ body {
 .aboutme-btn-link {
   text-decoration: none;
   display: inline-block;
-  color:white;
-  border:solid 1px #00cc6673;
-  color: #00cc6673;
+  color: white;
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 100px;
   text-align: center;
   cursor: pointer;
+  transition: transform 0.8s ease;
+  border: #00cc6673;
+  background: linear-gradient(to right, #00ff80a9, #00ff8054);
 }
 
 .aboutme-btn-link:hover {
   background-color: #00cc6673;
-  color: white;
+  border: #00cc6673;
   transform: scale(1.05);
 }
 
@@ -194,16 +195,18 @@ body {
 /* project section */
 .project-card {
   background-color: #00ff80a9;
+  background: linear-gradient(to right, #00ff80a9, #00ff8054);
   padding: 20px;
   margin: 20px 0;
   border-radius: 10px;
   text-align: center;
   margin-bottom: 30px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.8s ease;
+  transition: transform 0.8s ease;
 }
 
 .project-card:hover {
-  background-color: #00ff8067;
+  background: linear-gradient(to right, #00ff80a9, #00ff806c);
   transform: scale(1.05);
 }
 
@@ -259,6 +262,7 @@ body {
 
 .progress-bar {
   background-color: #00ff80a9;
+  background: linear-gradient(to right, #0b331f54, #00ff80a9);
   height: 100%;
   width: 0;
   transition: width 2s ease-in-out;
@@ -301,22 +305,24 @@ body {
 }
 
 .section-title {
-  color:#00ff8067;
-  font-size: 30px;
+  color: #00ff8062;
+  font-size: 40px;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .item {
-  background-color: #1a1a1a;
+  background: linear-gradient(to right, #1a1a1a, #1d1d1d);
   padding: 15px;
   border-radius: 20px;
   margin-bottom: 25px;
-  transition: background-color 1s;
+  transition: background 1s;
+  transition: transform 0.8s ease;
 }
 
 .item:hover{
-  background-color: #1a1a1a6e;
+  background: linear-gradient(to right, #1a1a1a, #003303);
+  transform: scale(1.05);
 }
 
 .item-date {
@@ -387,18 +393,18 @@ body {
 }
 
 .contact-btn {
-  background-color: #00ff80a9;
+  background-color: #00ff8088;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 20px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.8s ease;
 }
 
 .contact-btn:hover {
-  background-color: #00cc66;
+  background-color: #3fe08fd5;
 }
 
 /* Footer */
