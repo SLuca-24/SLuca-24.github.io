@@ -262,7 +262,6 @@ body {
 
 .progress-bar {
   background-color: #00ff80a9;
-  background: linear-gradient(to right, #0b331f54, #00ff80a9);
   height: 100%;
   width: 0;
   transition: width 2s ease-in-out;
