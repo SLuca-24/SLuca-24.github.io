@@ -13,13 +13,13 @@ body {
 
 .works-container {
     display: flex;
-    gap: 50px; 
+    gap: 50px;
     justify-content: center;
     padding: 10px;
 
 }
 
-.work1, .work2 {
+.work {
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -34,7 +34,7 @@ body {
 }
 
 
-.work1:hover, .work2:hover {
+.work:hover {
   transform: translateY(-10px);
 }
 
@@ -54,13 +54,10 @@ h1 {
     padding-bottom: 0;
 }
 
-#frase-work1, #frase-work2 {
+#frase-work {
     font-size: 20px;
     line-height: 1.4;
 }
-
-
-
 
 #linkalprogettostyle {
 text-decoration: none;
@@ -71,11 +68,10 @@ transition: color 0.6s ease;
 
 #linkalprogettostyle:hover {
     text-decoration: underline;
-    color: #00ff80a9;
+    color: #abf7b2da;
  }
 
   .header {
-    
     background-color: #1a1a1a;
     padding: 30px 40px;
     border-radius: 20px;
@@ -92,8 +88,7 @@ transition: color 0.6s ease;
     justify-content: space-between;
     align-items: center;
   }
-  
-  /* Menu big screen*/
+
   .nav-div {
     display: flex;
     flex-direction: row;
@@ -138,10 +133,12 @@ transition: color 0.6s ease;
     display: flex;
     flex-direction: row;
     padding: 30px;
+    padding-right:2px;
     font-size: auto;
     color:white;
     text-decoration: none;
     font-size: 22px;
+    transition: transform 0.5s;
   }
 
   .navbar a:hover {
@@ -157,6 +154,7 @@ transition: color 0.6s ease;
     display: flex;
     max-height: 100px;
     max-width: 100px;
+    transition: transform 0.5s;
   }
 
   .logo-div:hover {
@@ -169,19 +167,7 @@ transition: color 0.6s ease;
     border-radius: 150px;
   }
   
-  .mail-text {
-    display: flex;
-    color: #ffffff;
-    height: 100%;
-    align-items:center;
-    padding-right: 20px;
-    font-size:22px;
-    transition: color 0.6s ease; 
-  }
-  
-  .mail-text:hover {
-    color: #00ff8067;
-  }
+
 
 
   /* footer*/
@@ -285,7 +271,7 @@ transition: color 0.6s ease;
         flex-direction: column;  
     }
 
-    .work1, .work2 {
+    .work {
         width: 100%;       
     }
     
