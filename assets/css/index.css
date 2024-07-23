@@ -230,7 +230,6 @@ body {
   padding: 50px 0;
   text-align: center;
   color: #ffffff;
-
 }
 
 .skills h2 {
@@ -277,71 +276,6 @@ body {
   padding-right: 45px;
   border-radius: 4px;
 }
-
-/*education section*/
-
-.container-edu {
-  margin-left: 250px;
-  margin-right: 250px;
-  display: flex;
-  gap: 40px;
-  margin-bottom: 100px;
-}
-
-.my-experience, .my-education {
-  width: 50%;
-}
-
-.my-experience {
-  animation: slideInLeft 1.5s ease-in-out;
-}
-
-.my-education {
-  animation: slideInRight 1.5s ease-in-out;
-}
-
-.section-title {
-  color:#00ff8067;
-  font-size: 30px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.item {
-  background-color: #1a1a1a;
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 25px;
-  transition: background-color 1s;
-}
-
-.item:hover{
-  background-color: #1a1a1a6e;
-}
-
-.item-date {
-  color: #00ff80a9;
-  font-weight: bold;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.item-title {
-  font-size: 23px;
-  margin: 5px 0;
-  font-weight: 700;
-}
-
-.item-location {
-  font-size: 20px;
-  color: #aaa;
-  font-weight: 700;
-}
-
-.item-date {
-  font-size: 18px;
-}
-
 
 /* Contact Section */
 .contact {
